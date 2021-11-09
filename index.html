@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Forms</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+</head>
+<body>
+
+    <form id="msform">
+        <ul id="progressbar">
+            <li class="active">Configuración de Cuenta</li>
+            <li>Perfil de Redes Sociales</li>
+            <li>Detalles Personales</li>
+        </ul>
+
+        <fieldset>
+            <h2 class="fs-title">Crea tu cuenta</h2>
+            <h3 class="fs-subtitle">Este es el paso 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Contraseña" />
+            <input type="password" name="cpass" placeholder="Confirmar Contraseña" />
+
+            <input type="button" name="next" value="Siguiente" class="next action-button"/>
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Perfil de Redes Sociales</h2>
+            <h3 class="fs-subtitle">Tu presencia en redes sociales</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google +" />
+
+            <input type="button" name="previous" value="Anterior" class="previous action-button">
+            <input type="button" name="next" value="Siguiente" class="next action-button">
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Detalles Personales</h2>
+            <h3 class="fs-subtitle">No usaremos tu info personal</h3>
+            <input type="text" name="fname" placeholder="Nombre" />
+            <input type="text" name="lname" placeholder="Apellido" />
+            <input type="text" name="phone" placeholder="Teléfono+" />
+            <textarea name="adress" placeholder="Dirección"></textarea>
+
+            <input type="button" name="previous" value="Anterior" class="previous action-button">
+            <input type="submit" name="submit" value="Enviar" class="submit action-button">
+        </fieldset>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
